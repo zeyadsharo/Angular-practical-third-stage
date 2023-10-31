@@ -4,13 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { CalculatorComponent } from './calculator/calculator.component';
-import { DirectiveComponent } from './directive/directive.component'; // import FormsModule
+import { DirectiveComponent } from './directive/directive.component';
+import { EventBindingComponent } from './event-binding/event-binding.component'; // import FormsModule
 
 @NgModule({
   declarations: [
     AppComponent,
     CalculatorComponent,
-    DirectiveComponent
+    DirectiveComponent,
+    EventBindingComponent
   ],
   imports: [
     BrowserModule,
