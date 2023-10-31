@@ -8,7 +8,13 @@
   <p>This is the content for guests.</p>
 </ng-template>
 
-<input type="text" #box (focus)="my_function(box.value); box.value = ''" />
+<label for="firstname">Enter your name:</label>
+<input
+  type="text"
+  #box
+  (focus)="my_function(box.value); box.value = ''"
+  id="firstname"
+/>
 <!-- 
     some other example for event binding
        keyup.enter
