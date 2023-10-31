@@ -7,7 +7,8 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TextInterpolationComponent } from './text-interpolation/text-interpolation.component';
-import { PropertyBindingComponent } from './property-binding/property-binding.component'; // import FormsModule
+import { PropertyBindingComponent } from './property-binding/property-binding.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component'; // import FormsModule
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
     DirectiveComponent,
     EventBindingComponent,
     TextInterpolationComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    TwoWayBindingComponent
   ],
   imports: [
     BrowserModule,
