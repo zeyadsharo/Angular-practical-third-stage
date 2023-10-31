@@ -5,14 +5,16 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DirectiveComponent } from './directive/directive.component';
-import { EventBindingComponent } from './event-binding/event-binding.component'; // import FormsModule
+import { EventBindingComponent } from './event-binding/event-binding.component';
+import { TextInterpolationComponent } from './text-interpolation/text-interpolation.component'; // import FormsModule
 
 @NgModule({
   declarations: [
     AppComponent,
     CalculatorComponent,
     DirectiveComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    TextInterpolationComponent
   ],
   imports: [
     BrowserModule,
