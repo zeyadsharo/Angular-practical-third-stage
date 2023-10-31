@@ -1,0 +1,14 @@
+<label>Enter number 1:</label>
+<input type="number" [(ngModel)]="num1" />
+<br />
+<label>Enter number 2:</label>
+<input type="number" [(ngModel)]="num2" />
+<br />
+<button (click)="calculate('+')">+</button>
+<button (click)="calculate('-')">-</button>
+<button (click)="calculate('*')">*</button>
+<button (click)="calculate('/')">/</button>
+<br />
+<br />
+<label>Result:</label>
+<input type="number" [(ngModel)]="result" disabled />
