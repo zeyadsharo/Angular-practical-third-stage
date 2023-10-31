@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { CalculatorComponent } from './calculator/calculator.component'; // import FormsModule
+import { CalculatorComponent } from './calculator/calculator.component';
+import { DirectiveComponent } from './directive/directive.component'; // import FormsModule
 
 @NgModule({
   declarations: [
     AppComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    DirectiveComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,31 @@
+<div *ngIf="isLoggedIn; else notLoggedIn">
+  <h1>Welcome, User!</h1>
+  <p>This is the content for logged-in users.</p>
+</div>
+
+<ng-template #notLoggedIn>
+  <h1>Welcome, Guest!</h1>
+  <p>This is the content for guests.</p>
+</ng-template>
+
+<input type="text" #box (focus)="my_function(box.value); box.value = ''" />
+<!-- 
+    some other example for event binding
+       keyup.enter
+       keyup.shift
+       keyup.control
+       keyup.alt
+       keyup.meta
+       focus
+       blur
+       cut
+       copy
+ -->
+<ul>
+  <li *ngFor="let x of people; let i = index">
+    {{ x.name }} is {{ x.age }} years old
+    <!-- check if age > 23  alert  -->
+    <!-- <p *ngIf="x.age > 23; else young">Old</p>
+    <ng-template #young>Young</ng-template> -->
+  </li>
+</ul>
