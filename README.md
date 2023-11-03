@@ -1,6 +1,52 @@
-# MyApp
+# Angular Practical Third Stage
+ steps to the instructions:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+### Setting Up GitHub and Git on Your PC:
+
+#### GitHub Account:
+1. If you don't have a GitHub account, go to [GitHub](https://github.com/) and sign up for a new account.
+
+#### Git Installation:
+2. Download and install Git on your PC. You can download it from the official Git website: [Git Downloads](https://git-scm.com/downloads).
+
+### Cloning the Git Repository:
+1. Open your terminal or command prompt.
+2. Navigate to the directory where you want to clone the repository using the `cd` command.
+3. Copy the repository URL: `https://github.com/zeyadsharo/Angular-practical-third-stage.git`
+4. Run the following command to clone the repository:
+   ```bash
+   git clone https://github.com/zeyadsharo/Angular-practical-third-stage.git
+   ```
+5. Change into the cloned directory:
+   ```bash
+   cd Angular-practical-third-stage
+   ```
+
+### Pulling Changes After Every Lecture:
+1. Before starting any new work, pull the latest changes from the repository:
+   ```bash
+   git pull origin main
+   ```
+
+### Running Angular Application:
+1. After pulling the latest changes, navigate into the project directory if you're not already there:
+   ```bash
+   cd Angular-practical-third-stage
+   ```
+2. Install project dependencies using npm:
+   ```bash
+   npm install
+   ```
+3. Start the Angular application:
+   ```bash
+   npm start
+   ```
+4. Open your browser and visit `http://localhost:4200/` to view the running Angular application.
+
+
+
+
+
 
 ## Development server
 
@@ -10,18 +56,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
