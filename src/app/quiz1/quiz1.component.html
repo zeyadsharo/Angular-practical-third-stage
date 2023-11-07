@@ -1,0 +1,20 @@
+<!-- A. Create a button -->
+<button (click)="handleButtonClick()">Click me</button>
+
+<!-- B. Bind the disabled property of a button -->
+<button [disabled]="isButtonDisabled">Click me</button>
+
+<!-- C. Display the value of a variable message -->
+<p>{{ messageWithDate }}</p>
+
+<!-- D. Create an input field with two-way binding -->
+<input
+  [(ngModel)]="userName"
+  placeholder="Enter your name"
+  (input)="validateInput()"
+/>
+
+<!-- Display error message -->
+<p *ngIf="inputError" style="color: red">
+  Only alphabetical characters are allowed!
+</p>
