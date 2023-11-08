@@ -15,7 +15,8 @@ export class Quiz1Component {
   isButtonDisabled: boolean = true;
 
   // C. Text Interpolation 
-  message: string = 'Hello, Angular!';
+  message: string = 'Hello, Angular!'; 
+  //for date you can also use constant  variable  like date:string="2023-11-08"
   messageWithDate: string = `${this.message} - ${new Date().toISOString().slice(0, 10)}`;
 
   // D. Two-Way Binding with a challenge
