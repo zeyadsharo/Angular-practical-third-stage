@@ -1,0 +1,30 @@
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" ngModel required email />
+  <div *ngIf="f.submitted && f.controls['email'].errors">
+    <div *ngIf="f.controls['email'].errors['required']">Email is required.</div>
+    <div *ngIf="f.controls['email'].errors['email']">Email is not valid.</div>
+  </div>
+
+  <label for="password">Password</label>
+  <input type="password" id="password" name="password" ngModel required />
+  <div *ngIf="f.submitted && f.controls['password'].errors">
+    <div *ngIf="f.controls['password'].errors['required']">
+      Password is required.
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="f.invalid">Submit</button>
+</form>
+<!-- 
+    explain the following: 
+    1. ngSubmit : event binding
+    2. #f="ngForm" : template reference variable
+    3. ngModel : directive
+    4. f.submitted : property binding 
+    5. f.controls['email'].errors :  f.controls['email'] is an object, and f.controls['email'].errors is a property of that object
+    6. f.controls['email'].errors['required'] : f.controls['email'].errors is an object, and f.controls['email'].errors['required'] is a property of that object
+    7. f.controls['email'].errors['email'] : f.controls['email'].errors is an object, and f.controls['email'].errors['email'] is a property of that object
+    8. f.invalid : f is an object, and f.invalid is a property of that object
+    9. [disabled] : property binding
+ -->

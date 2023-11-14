@@ -12,7 +12,8 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { Quiz1Component } from './quiz1/quiz1.component';
 import { MidTermExamComponent } from './mid-term-exam/mid-term-exam.component';
 import { PipsComponent } from './pips/pips.component';
-import { HandlingFormSubmissionComponent } from './handling-form-submission/handling-form-submission.component'; // import FormsModule
+import { HandlingFormSubmissionComponent } from './handling-form-submission/handling-form-submission.component';
+import { FormValidationComponent } from './form-validation/form-validation.component'; // import FormsModule
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HandlingFormSubmissionComponent } from './handling-form-submission/hand
     Quiz1Component,
     MidTermExamComponent,
     PipsComponent,
-    HandlingFormSubmissionComponent
+    HandlingFormSubmissionComponent,
+    FormValidationComponent
   ],
   imports: [
     BrowserModule,
