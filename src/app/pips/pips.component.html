@@ -1,0 +1,10 @@
+<p>pips!</p>
+<p>Today's date: {{ today | date }}</p>
+<p>Amount: {{ amount | currency }}</p>
+<p>Name in uppercase: {{ name | uppercase }}</p>
+<p>JSON data: {{ json | json }}</p>
+<p>Promise result: {{ promise | async }}</p>
+<p>Message in title case: {{ message | titlecase }}</p>
+<p>Percentage: {{ percentage | percent }}</p>
+<p>The date today is: {{ today | date : "short" | uppercase }}</p>
+<p>Amount: {{ amount | currency : "EUR" : "symbol" : "1.2-2" }}</p>

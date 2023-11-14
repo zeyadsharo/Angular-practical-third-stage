@@ -10,7 +10,8 @@ import { TextInterpolationComponent } from './text-interpolation/text-interpolat
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { Quiz1Component } from './quiz1/quiz1.component';
-import { MidTermExamComponent } from './mid-term-exam/mid-term-exam.component'; // import FormsModule
+import { MidTermExamComponent } from './mid-term-exam/mid-term-exam.component';
+import { PipsComponent } from './pips/pips.component'; // import FormsModule
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MidTermExamComponent } from './mid-term-exam/mid-term-exam.component'; 
     PropertyBindingComponent,
     TwoWayBindingComponent,
     Quiz1Component,
-    MidTermExamComponent
+    MidTermExamComponent,
+    PipsComponent
   ],
   imports: [
     BrowserModule,
