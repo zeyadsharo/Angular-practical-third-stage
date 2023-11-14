@@ -1,0 +1,18 @@
+<!-- <h2>People List</h2> -->
+<ul>
+  <li *ngFor="let person of people">
+    <p *ngIf="person.age > 25">{{ person.name }} - {{ person.age }}</p>
+  </li>
+</ul>
+
+<!-- <h2>Welcome Message</h2> -->
+<div *ngIf="isLoggedIn; else guestTemplate">
+  <p>Welcome, User!</p>
+</div>
+<ng-template #guestTemplate>
+  <p>Welcome, Guest!</p>
+</ng-template>
+
+<!-- <h2>Counter</h2> -->
+<p>Counter: {{ counter }}</p>
+<button (click)="incrementCounter()">Click me</button>

@@ -9,7 +9,8 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TextInterpolationComponent } from './text-interpolation/text-interpolation.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
-import { Quiz1Component } from './quiz1/quiz1.component'; // import FormsModule
+import { Quiz1Component } from './quiz1/quiz1.component';
+import { MidTermExamComponent } from './mid-term-exam/mid-term-exam.component'; // import FormsModule
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { Quiz1Component } from './quiz1/quiz1.component'; // import FormsModule
     TextInterpolationComponent,
     PropertyBindingComponent,
     TwoWayBindingComponent,
-    Quiz1Component
+    Quiz1Component,
+    MidTermExamComponent
   ],
   imports: [
     BrowserModule,
