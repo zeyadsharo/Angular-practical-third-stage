@@ -1,0 +1,9 @@
+<p>handling-form-submission works!</p>
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <label for="username">User Name</label>
+  <input type="text" id="username" name="username" ngModel />
+  <br />
+  <label for="password">Password</label>
+  <input type="text" id="password" name="password" ngModel />
+  <button type="submit">Submit</button>
+</form>

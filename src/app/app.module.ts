@@ -11,7 +11,8 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { Quiz1Component } from './quiz1/quiz1.component';
 import { MidTermExamComponent } from './mid-term-exam/mid-term-exam.component';
-import { PipsComponent } from './pips/pips.component'; // import FormsModule
+import { PipsComponent } from './pips/pips.component';
+import { HandlingFormSubmissionComponent } from './handling-form-submission/handling-form-submission.component'; // import FormsModule
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PipsComponent } from './pips/pips.component'; // import FormsModule
     TwoWayBindingComponent,
     Quiz1Component,
     MidTermExamComponent,
-    PipsComponent
+    PipsComponent,
+    HandlingFormSubmissionComponent
   ],
   imports: [
     BrowserModule,
