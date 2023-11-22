@@ -25,6 +25,12 @@ export class PipsComponent {
   amount: number = 1234.56;
   name: string = 'Angular Pipes';
   json: Object = { name: 'Angular', version: '5.0' };
+  /**
+   * Represents a promise that resolves to a string value.
+   * promise is used to display the data in the template before displaying it in the view.
+   * The async pipe subscribes to the promise and returns the latest value it has emitted.
+   * When a new value is emitted, the async pipe marks the component to be checked for changes.
+   */
   promise: Promise<string> = new Promise((resolve, reject) => {
     setTimeout(() => resolve('Promise Complete!'), 3000);
   });
