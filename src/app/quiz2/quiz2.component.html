@@ -1,0 +1,33 @@
+<!-- 
+Group A: 
+
+Create a simple form that has a select field with four options: red, green, blue, and yellow. 
+Use uppercase pipe to Display the selected option in the template. 
+
+-->
+
+<form #Form1="ngForm">
+  <label for="color">Select a color:</label>
+  <select id="color" name="color" ngModel>
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+    <option value="yellow">Yellow</option>
+  </select>
+</form>
+
+<p>Selected color: {{ Form1.value.color | uppercase }}</p>
+
+<!-- 
+Group B:
+Create a simple form that has a checkbox field that indicates whether the user agrees to the terms.
+Use json pipe to display the form value as a JSON object in the template. 
+
+-->
+
+<form #Form2="ngForm">
+  <label for="agree">I agree to the terms and conditions:</label>
+  <input type="checkbox" id="agree" name="agree" ngModel />
+</form>
+
+<p>Form value: {{ Form2.value | json }}</p>

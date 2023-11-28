@@ -1,13 +1,13 @@
 <form (ngSubmit)="onSubmit(f)" #f="ngForm">
   <label for="email">Email</label>
-  <input type="email" id="email" name="email" ngModel required email />
+  <input type="email" id="email" name="email" ngmoodl required email />
   <div *ngIf="f.submitted && f.controls['email'].errors">
     <div *ngIf="f.controls['email'].errors['required']">Email is required.</div>
     <div *ngIf="f.controls['email'].errors['email']">Email is not valid.</div>
   </div>
 
   <label for="password">Password</label>
-  <input type="password" id="password" name="password" ngModel required />
+  <input type="password" id="password" name="password" ngmoodl required />
   <div *ngIf="f.submitted && f.controls['password'].errors">
     <div *ngIf="f.controls['password'].errors['required']">
       Password is required.
@@ -15,16 +15,107 @@
   </div>
 
   <button type="submit" [disabled]="f.invalid">Submit</button>
+  <button type="button" (click)="f.reset()">Reset</button>
+
+  <!-- Challenge 1 -->
+  <!-- <label for="mood">mood</label>
+  <select id="mood" name="mood" ngmoodl required>
+    <option value="">Select a mood</option>
+    <option value="happy">Happy</option>
+    <option value="sad">Sad</option>
+    <option value="excited">Excited</option>
+  </select>
+
+  <div *ngIf="f.value.mood === 'happy'">😊</div>
+  <div *ngIf="f.value.mood === 'sad'">😢</div>
+  <div *ngIf="f.value.mood === 'excited'">😁</div> -->
+
+  <!-- Challenge 2 -->
+  <!-- <div>
+    <label for="terms">Agree to Terms</label>
+    <input type="checkbox" id="terms" name="terms" ngmoodl required />
+    <div *ngIf="f.submitted && !f.controls['terms'].value">
+      You must agree to the terms.
+    </div>
+  </div> -->
+
+  <!-- Challenge 3 -->
+  <!-- <label for="mood_radio">Mood</label>
+  <div>
+    <input
+      type="radio"
+      id="happy"
+      name="mood_radio"
+      value="happy"
+      ngModel
+      required
+    />
+    <label for="happy">Happy</label>
+  </div>
+  <div>
+    <input
+      type="radio"
+      id="sad"
+      name="mood_radio"
+      value="sad"
+      ngModel
+      required
+    />
+    <label for="sad">Sad</label>
+  </div>
+  <div>
+    <input
+      type="radio"
+      id="excited"
+      name="mood_radio"
+      value="excited"
+      ngModel
+      required
+    />
+    <label for="excited">Excited</label>
+  </div>
+
+  <div *ngIf="f.value.mood_radio === 'happy'">😊</div>
+  <div *ngIf="f.value.mood_radio === 'sad'">😢</div>
+  <div *ngIf="f.value.mood_radio === 'excited'">😁</div> -->
 </form>
+
 <!-- 
-    explain the following: 
-    1. ngSubmit : event binding
-    2. #f="ngForm" : template reference variable
-    3. ngModel : directive
-    4. f.submitted : property binding 
-    5. f.controls['email'].errors :  f.controls['email'] is an object, and f.controls['email'].errors is a property of that object
-    6. f.controls['email'].errors['required'] : f.controls['email'].errors is an object, and f.controls['email'].errors['required'] is a property of that object
-    7. f.controls['email'].errors['email'] : f.controls['email'].errors is an object, and f.controls['email'].errors['email'] is a property of that object
-    8. f.invalid : f is an object, and f.invalid is a property of that object
-    9. [disabled] : property binding
- -->
+  challenge1: add select filed name mood if value is happy then display a emoji 😊
+  if value is sad then display a emoji 😢
+  if value is excited then display a emoji 😁
+
+  challenge2: add a checkbox field that indicates whether the user agrees to the terms.
+  if the checkbox is not checked then display a message "You must agree to the terms."
+   
+  challenge3: add a radio button field that has three options: happy, sad, and excited.
+  if the user selects happy then display a emoji 😊
+  if the user selects sad then display a emoji 😢
+  if the user selects excited then display a emoji 😁
+
+   
+Home work: 
+
+Create a form that allows users to enter their programming skills and experience. The form should include the following fields:
+
+1. Name: A text input field for the user's name.
+2. Email: A text input field for the user's email address.
+3. Programming Languages: A multi-select dropdown or checkbox group where users can select one or more programming languages they are proficient in (e.g., JavaScript, Python, Java, C++).
+4. Experience Level: A radio button group where users can select their experience level in programming (e.g., Beginner, Intermediate, Advanced).
+5. Project Description: A textarea where users can enter a brief description of a programming project they have worked on.
+
+The form should have the following validation rules:
+
+1. Name and email fields are required.
+2. Email field must be a valid email address.
+3. At least one programming language must be selected.
+4. Project description must be at least 10 characters long.
+
+Display appropriate error messages for each validation rule and disable the submit button until all fields are valid.
+
+Additionally, upon form submission, display a success message with the user's name and a personalized message based on their experience level. For example, if the user selects "Intermediate" as their experience level, display the message "Congratulations [Name]! Your programming skills are impressive. Keep up the great work!"
+
+Implement the above challenge using Angular's reactive forms approach and utilize Angular's built-in form validation features.
+
+Good luck with your homework!
+-->
