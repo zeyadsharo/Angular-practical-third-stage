@@ -1,1 +1,24 @@
-<button mat-button [routerLink]="['/calculator']">Go to Other1</button>
+<mat-toolbar color="primary">
+    <span>My Application</span>
+    <span class="example-spacer"></span>
+    <button mat-button  [routerLink]="['/']"      >Home</button>
+    <button mat-button>About</button>
+    <button mat-button>Contact</button>
+    <!-- calculater -->
+    <button mat-button [routerLink]="['/calculator']">Go to Calculator</button>
+    <button mat-button [routerLink]="['/quiz1']">Quiz 1</button>
+    <button mat-button [routerLink]="['/mid-term']">Mid-Term Exam</button>
+    <button mat-button [routerLink]="['/quiz2']">Quiz 2</button>
+</mat-toolbar>
+<!-- content and have <router-outlet></router-outlet> -->
+<div class="content">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Welcome to the Home Page</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <router-outlet></router-outlet>
+        </mat-card-content>
+    </mat-card>
+    
+</div>
