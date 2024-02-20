@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
@@ -21,8 +22,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MaterialExampleComponent } from './material-example/material-example.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { HomeComponent } from './home/home.component';
 
 
+const routes: Routes = [{ path: 'calculator', component: CalculatorComponent }];
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,12 +42,19 @@ import { MatTabsModule } from '@angular/material/tabs';
     FormValidationComponent,
     Quiz2Component,
     MaterialExampleComponent,
+    HomeComponent,
   ],
-  imports: [BrowserModule, FormsModule,
+  imports: [
+    BrowserModule,
+    FormsModule,
     MatCardModule,
     MatButtonModule,
     MatTabsModule,
-    NoopAnimationsModule, MatToolbarModule],
+    NoopAnimationsModule,
+    MatToolbarModule,
+    RouterModule.forRoot(routes)
+    
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
