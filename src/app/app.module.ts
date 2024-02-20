@@ -16,6 +16,12 @@ import { HandlingFormSubmissionComponent } from './handling-form-submission/hand
 import { FormValidationComponent } from './form-validation/form-validation.component';
 import { Quiz2Component } from './quiz2/quiz2.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations'; // import FormsModule
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MaterialExampleComponent } from './material-example/material-example.component';
+import { MatTabsModule } from '@angular/material/tabs';
+
 
 @NgModule({
   declarations: [
@@ -31,14 +37,15 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations'; // 
     PipsComponent,
     HandlingFormSubmissionComponent,
     FormValidationComponent,
-    Quiz2Component
+    Quiz2Component,
+    MaterialExampleComponent,
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    NoopAnimationsModule
-  ],
+  imports: [BrowserModule, FormsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatTabsModule,
+    NoopAnimationsModule, MatToolbarModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
